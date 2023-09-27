@@ -9,7 +9,7 @@ import java.time.Duration;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class SearchHotel {
+public class SearchHotelTest {
  @Test
     public void getInfo() {
      WebDriverManager.chromedriver().setup();
