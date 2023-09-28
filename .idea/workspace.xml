@@ -4,25 +4,120 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70708a7c-f6e1-44b0-bb2e-94938125abbf" name="Changes" comment="">
+    <list default="true" id="70708a7c-f6e1-44b0-bb2e-94938125abbf" name="Changes" comment="Add">
+      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SearchHotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchHotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchHotelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchHotelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SingUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SingUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2Vyzr7erS8cTmESCrVxhacSPLFw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Domownik/Desktop/QA1stProject/RyanairTest"
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Domownik/Desktop/QA1stProject/RyanairTest&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.&lt;default&gt;">
+    <configuration name="SearchHotelTest.getInfoWithoutCity" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RyanairTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SearchHotelTest" />
+      <option name="METHOD_NAME" value="getInfoWithoutCity" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingUpTest.getInfoEmptyFields" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RyanairTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SingUpTest" />
+      <option name="METHOD_NAME" value="getInfoEmptyFields" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingUpTest.getInfoEmptyFieldsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RyanairTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SingUpTest" />
+      <option name="METHOD_NAME" value="getInfoEmptyFieldsTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingUpTest.getInfoWrongEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RyanairTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SingUpTest" />
+      <option name="METHOD_NAME" value="getInfoWrongEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RyanairTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.&lt;default&gt;" />
+        <item itemvalue="TestNG.SingUpTest.getInfoEmptyFieldsTest" />
+        <item itemvalue="TestNG.SingUpTest.getInfoEmptyFields" />
+        <item itemvalue="TestNG.SingUpTest.getInfoWrongEmail" />
+        <item itemvalue="TestNG.SearchHotelTest.getInfoWithoutCity" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Set city name">
       <option name="closed" value="true" />
@@ -32,7 +127,38 @@
       <option name="project" value="LOCAL" />
       <updated>1695731888676</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Setting the stay date, number of guests, and selecting the search button">
+      <option name="closed" value="true" />
+      <created>1695748767993</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695748767993</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70708a7c-f6e1-44b0-bb2e-94938125abbf" name="Changes" comment="" />
+      <created>1695823308917</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695823308917</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Retrieving search results and adding assertions">
+      <option name="closed" value="true" />
+      <created>1695831206454</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695831206454</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add sign up test">
+      <option name="closed" value="true" />
+      <created>1695844731550</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695844731550</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -48,6 +174,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Set city name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set city name" />
+    <MESSAGE value="Setting the stay date, number of guests, and selecting the search button" />
+    <MESSAGE value="Retrieving search results and adding assertions" />
+    <MESSAGE value="Add" />
+    <MESSAGE value="Add sign up test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sign up test" />
   </component>
 </project>
