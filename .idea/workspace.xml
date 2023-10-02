@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70708a7c-f6e1-44b0-bb2e-94938125abbf" name="Changes" comment="Add">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
+    <list default="true" id="70708a7c-f6e1-44b0-bb2e-94938125abbf" name="Changes" comment="Add ResultsPage, refactor SearchHotelPage">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/ResultsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SearchHotelPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SearchHotelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchHotelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SingUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SingUpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchHotelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SearchHotelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SingUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SingUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +50,18 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.&lt;default&gt;">
-    <configuration name="SearchHotelTest.getInfoWithoutCity" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.SearchHotelTest.getInfoTest">
+    <configuration name="SearchHotelTest.getInfoTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchHotelTest" />
-      <option name="METHOD_NAME" value="getInfoWithoutCity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryanair.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryanair.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SearchHotelTest" />
+      <option name="METHOD_NAME" value="getInfoTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -64,7 +72,7 @@
     <configuration name="SingUpTest.getInfoEmptyFields" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SingUpTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SingUpTest" />
       <option name="METHOD_NAME" value="getInfoEmptyFields" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -76,7 +84,7 @@
     <configuration name="SingUpTest.getInfoEmptyFieldsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SingUpTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SingUpTest" />
       <option name="METHOD_NAME" value="getInfoEmptyFieldsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -88,7 +96,7 @@
     <configuration name="SingUpTest.getInfoWrongEmail" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SingUpTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SingUpTest" />
       <option name="METHOD_NAME" value="getInfoWrongEmail" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -109,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.&lt;default&gt;" />
+        <item itemvalue="TestNG.SearchHotelTest.getInfoTest" />
         <item itemvalue="TestNG.SingUpTest.getInfoEmptyFieldsTest" />
+        <item itemvalue="TestNG.&lt;default&gt;" />
         <item itemvalue="TestNG.SingUpTest.getInfoEmptyFields" />
         <item itemvalue="TestNG.SingUpTest.getInfoWrongEmail" />
-        <item itemvalue="TestNG.SearchHotelTest.getInfoWithoutCity" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695844731550</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding additional tests and cleaning up the code">
+      <option name="closed" value="true" />
+      <created>1695909091994</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1695909091994</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,8 +192,10 @@
     <MESSAGE value="Set city name" />
     <MESSAGE value="Setting the stay date, number of guests, and selecting the search button" />
     <MESSAGE value="Retrieving search results and adding assertions" />
-    <MESSAGE value="Add" />
     <MESSAGE value="Add sign up test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add sign up test" />
+    <MESSAGE value="Add" />
+    <MESSAGE value="Adding additional tests and cleaning up the code" />
+    <MESSAGE value="Add ResultsPage, refactor SearchHotelPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ResultsPage, refactor SearchHotelPage" />
   </component>
 </project>
