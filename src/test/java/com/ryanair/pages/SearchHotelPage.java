@@ -32,37 +32,48 @@ public class SearchHotelPage {
     private WebElement passengersButton;
     @FindBy(xpath = "//button[@class='rooms-search-widget__start-search ry-button--gradient-yellow']")
     private WebElement searchHotelButton;
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public SearchHotelPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
-    public void setCity (String city) {
+
+    public SearchHotelPage setCity(String city) {
         hotels.click();
         cityName.sendKeys(city);
-        String xpathCity = String.format("//div[@class='location__name b2' and starts-with(text(),'%s')]",city);
+        String xpathCity = String.format("//div[@class='location__name b2' and starts-with(text(),'%s')]", city);
         driver.findElements(By.xpath(xpathCity)).stream().filter(WebElement::isDisplayed).findFirst().ifPresent(WebElement::click);
+        return this;
     }
-    public void setDate() {
+
+    public SearchHotelPage setDate() {
         checkIn.click();
         checkInDate.click();
         checkOut.click();
         checkOutDate.click();
+        return this;
     }
-        public void setPassengers (int addAdults, int addChildren, String kidsAge) {
+
+    public SearchHotelPage setPassengers(int addAdults, int addChildren, String kidsAge) {
         passengers.click();
         addTravellers(adults, addAdults);
         addTravellers(children, addChildren);
         childrenAge.sendKeys(kidsAge);
         String passengersButtonXpath = "//button[@class='rooms_done-button ry-button--anchor-blue ry-button--anchor']";
         driver.findElements(By.xpath(passengersButtonXpath)).stream().filter(WebElement::isDisplayed).findFirst().ifPresent(WebElement::click);
-        searchHotelButton.click();
+        return this;
     }
-    public void addTravellers (WebElement travellerButton, int numOfTravellers) {
+
+    public void addTravellers(WebElement travellerButton, int numOfTravellers) {
         for (int i = 0; i < numOfTravellers; i++) {
             travellerButton.click();
         }
+    }
+
+    public ResultsPage performSearch() {
+        searchHotelButton.click();
+        return new ResultsPage(driver);
     }
 
 }
