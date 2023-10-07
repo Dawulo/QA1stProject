@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70708a7c-f6e1-44b0-bb2e-94938125abbf" name="Changes" comment="Add ResultsPage, refactor SearchHotelPage">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/ResultsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SearchHotelPage.java" afterDir="false" />
+    <list default="true" id="70708a7c-f6e1-44b0-bb2e-94938125abbf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SignUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SearchHotelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SearchHotelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SingUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SingUpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/ResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SearchHotelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SearchHotelPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SearchHotelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SearchHotelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SingUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/com/ryanair/tests/BaseTest.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -50,8 +54,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SearchHotelTest.getInfoTest">
-    <configuration name="SearchHotelTest.getInfoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.com.ryanair">
+    <configuration name="SearchHotelTest.getInfoWithoutCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
       <extension name="coverage">
         <pattern>
@@ -61,7 +65,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ryanair.tests" />
       <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SearchHotelTest" />
-      <option name="METHOD_NAME" value="getInfoTest" />
+      <option name="METHOD_NAME" value="getInfoWithoutCityTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -69,22 +73,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingUpTest.getInfoEmptyFields" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest.getInfoEmptyFieldsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SingUpTest" />
-      <option name="METHOD_NAME" value="getInfoEmptyFields" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingUpTest.getInfoEmptyFieldsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RyanairTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SingUpTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SignUpTest" />
       <option name="METHOD_NAME" value="getInfoEmptyFieldsTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -93,11 +85,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingUpTest.getInfoWrongEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest.getInfoTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SingUpTest" />
-      <option name="METHOD_NAME" value="getInfoWrongEmail" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryanair.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryanair.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SignUpTest" />
+      <option name="METHOD_NAME" value="getInfoTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -105,9 +103,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest.getInfoWrongEmailTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
-      <option name="PACKAGE_NAME" value="" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryanair.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryanair.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SignUpTest" />
+      <option name="METHOD_NAME" value="getInfoWrongEmailTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ryanair" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RyanairTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryanair.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryanair" />
       <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
@@ -117,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SearchHotelTest.getInfoTest" />
-        <item itemvalue="TestNG.SingUpTest.getInfoEmptyFieldsTest" />
-        <item itemvalue="TestNG.&lt;default&gt;" />
-        <item itemvalue="TestNG.SingUpTest.getInfoEmptyFields" />
-        <item itemvalue="TestNG.SingUpTest.getInfoWrongEmail" />
+        <item itemvalue="TestNG.com.ryanair" />
+        <item itemvalue="TestNG.SignUpTest.getInfoEmptyFieldsTest" />
+        <item itemvalue="TestNG.SignUpTest.getInfoWrongEmailTest" />
+        <item itemvalue="TestNG.SignUpTest.getInfoTest" />
+        <item itemvalue="TestNG.SearchHotelTest.getInfoWithoutCityTest" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695909091994</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add ResultsPage, refactor SearchHotelPage">
+      <option name="closed" value="true" />
+      <created>1696252558512</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696252558512</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
