@@ -1,5 +1,7 @@
 package com.ryanair.pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -33,17 +35,33 @@ public class SearchHotelPage {
     @FindBy(xpath = "//button[@class='rooms-search-widget__start-search ry-button--gradient-yellow']")
     private WebElement searchHotelButton;
     private final WebDriver driver;
+    private static final Logger logger = LogManager.getLogger();
 
     public SearchHotelPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
 
-    public SearchHotelPage setCity(String city) {
+    public SearchHotelPage setHotel() {
         hotels.click();
+        return this;
+    }
+
+    public SearchHotelPage setCity() {
+        String city = "Warszawa";
+        logger.info("Set city");
         cityName.sendKeys(city);
         String xpathCity = String.format("//div[@class='location__name b2' and starts-with(text(),'%s')]", city);
         driver.findElements(By.xpath(xpathCity)).stream().filter(WebElement::isDisplayed).findFirst().ifPresent(WebElement::click);
+        logger.info("Set city done");
+        return this;
+    }
+    public SearchHotelPage setCity(String city) {
+        logger.info("Set city");
+        cityName.sendKeys(city);
+        String xpathCity = String.format("//div[@class='location__name b2' and starts-with(text(),'%s')]", city);
+        driver.findElements(By.xpath(xpathCity)).stream().filter(WebElement::isDisplayed).findFirst().ifPresent(WebElement::click);
+        logger.info("Set city done");
         return this;
     }
 

@@ -22,6 +22,7 @@ public class SignUpPage {
 
     String randEmail = "tests" + (int) (Math.random() * 1000) + "@tests.com";
     String randWrongEmail = "tests" + (int) (Math.random() * 1000) + "tests.com";
+    String userPassword = "Password123";
     @FindBy(xpath = "//button[@class='header-menu-item ng-star-inserted']//span[text()='Rejestracja']")
     private WebElement signUp;
     @FindBy(xpath = "//input[@name='email']")
@@ -33,14 +34,14 @@ public class SignUpPage {
     @FindBy(xpath = "//span[@class='body-l-lg body-l-sm ng-star-inserted']")
     private WebElement acceptAlert;
 
-    public void signUp(String userPassword) {
+    public void signUp() {
         signUp.click();
         email.sendKeys(randEmail);
         password.sendKeys(userPassword);
         signUpButton.click();
     }
 
-    public void signUpWrongEmail(String userPassword) {
+    public void signUpWrongEmail() {
         signUp.click();
         email.sendKeys(randWrongEmail);
         password.sendKeys(userPassword);

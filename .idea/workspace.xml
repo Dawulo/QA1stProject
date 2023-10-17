@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70708a7c-f6e1-44b0-bb2e-94938125abbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SignUpPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/utils/DriverFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/utils/ExcelReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/utils/PropertiesLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/utils/SeleniumHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testData.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/ResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SearchHotelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SearchHotelPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SignUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SearchHotelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SearchHotelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SingUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SignUpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +35,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="paraExecution" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -50,12 +64,15 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Domownik\Desktop\QA1stProject\RyanairTest\src\test\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.com.ryanair">
-    <configuration name="SearchHotelTest.getInfoWithoutCityTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.com.ryanair.tests">
+    <configuration name="SearchHotelTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
       <extension name="coverage">
         <pattern>
@@ -65,27 +82,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.ryanair.tests" />
       <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SearchHotelTest" />
-      <option name="METHOD_NAME" value="getInfoWithoutCityTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTest.getInfoEmptyFieldsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RyanairTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SignUpTest" />
-      <option name="METHOD_NAME" value="getInfoEmptyFieldsTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTest.getInfoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchHotelTest.getInfoTesWithDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
       <extension name="coverage">
         <pattern>
@@ -94,7 +98,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ryanair.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SignUpTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SearchHotelTest" />
+      <option name="METHOD_NAME" value="getInfoTesWithDataProvider" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchHotelTest.getInfoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RyanairTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryanair.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryanair.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SearchHotelTest" />
       <option name="METHOD_NAME" value="getInfoTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -121,15 +143,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.ryanair" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="&lt;default&gt;" type="TestNG" nameIsGenerated="true">
+      <module name="RyanairTest" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.ryanair.tests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ryanair.*" />
+          <option name="PATTERN" value="com.ryanair.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ryanair" />
+      <option name="PACKAGE_NAME" value="com.ryanair.tests" />
       <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
@@ -139,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.com.ryanair" />
-        <item itemvalue="TestNG.SignUpTest.getInfoEmptyFieldsTest" />
+        <item itemvalue="TestNG.com.ryanair.tests" />
+        <item itemvalue="TestNG.SearchHotelTest.getInfoTesWithDataProvider" />
+        <item itemvalue="TestNG.SearchHotelTest.getInfoTest" />
+        <item itemvalue="TestNG.SearchHotelTest" />
         <item itemvalue="TestNG.SignUpTest.getInfoWrongEmailTest" />
-        <item itemvalue="TestNG.SignUpTest.getInfoTest" />
-        <item itemvalue="TestNG.SearchHotelTest.getInfoWithoutCityTest" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +245,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696252558512</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Reformat code, refactor to follow fluent approach">
+      <option name="closed" value="true" />
+      <created>1696679952472</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696679952472</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add ResultsPage, refactor SearchHotelPage">
+      <option name="closed" value="true" />
+      <created>1696679990611</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696679990611</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +269,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -225,6 +294,7 @@
     <MESSAGE value="Add sign up test" />
     <MESSAGE value="Add" />
     <MESSAGE value="Adding additional tests and cleaning up the code" />
+    <MESSAGE value="Reformat code, refactor to follow fluent approach" />
     <MESSAGE value="Add ResultsPage, refactor SearchHotelPage" />
     <option name="LAST_COMMIT_MESSAGE" value="Add ResultsPage, refactor SearchHotelPage" />
   </component>
