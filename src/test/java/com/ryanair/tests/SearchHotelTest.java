@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class SearchHotelTest extends BaseTest {
-    //private ExtentReports extent = new ExtentReports();
+
     @Test
     public void getInfoTest() throws IOException {
         ExtentTest test = extentReports.createTest("Search hotel test");

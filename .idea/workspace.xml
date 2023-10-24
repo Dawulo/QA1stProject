@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70708a7c-f6e1-44b0-bb2e-94938125abbf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/utils/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/utils/ExcelReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/utils/PropertiesLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/utils/SeleniumHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testData.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SearchHotelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SearchHotelPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SearchHotelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SearchHotelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,8 +169,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.com.ryanair.tests" />
-        <item itemvalue="TestNG.SearchHotelTest.getInfoTesWithDataProvider" />
         <item itemvalue="TestNG.SearchHotelTest.getInfoTest" />
+        <item itemvalue="TestNG.SearchHotelTest.getInfoTesWithDataProvider" />
         <item itemvalue="TestNG.SearchHotelTest" />
         <item itemvalue="TestNG.SignUpTest.getInfoWrongEmailTest" />
       </list>
@@ -261,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696679990611</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add DriverFactory, PropertiesLoader, SeleniumHelper, ExcelReader, Apache POI, DataProvider, tests reports with screenshots and code has been cleaned.">
+      <option name="closed" value="true" />
+      <created>1697542368115</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697542368115</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +292,7 @@
     <MESSAGE value="Adding additional tests and cleaning up the code" />
     <MESSAGE value="Reformat code, refactor to follow fluent approach" />
     <MESSAGE value="Add ResultsPage, refactor SearchHotelPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ResultsPage, refactor SearchHotelPage" />
+    <MESSAGE value="Add DriverFactory, PropertiesLoader, SeleniumHelper, ExcelReader, Apache POI, DataProvider, tests reports with screenshots and code has been cleaned." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add DriverFactory, PropertiesLoader, SeleniumHelper, ExcelReader, Apache POI, DataProvider, tests reports with screenshots and code has been cleaned." />
   </component>
 </project>
