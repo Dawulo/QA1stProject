@@ -29,7 +29,7 @@ public class SignUpPage {
     private WebElement email;
     @FindBy(xpath = "//input[@name='password']")
     private WebElement password;
-    @FindBy(xpath = "//button[@class='auth-submit__button ry-button--full ry-button--flat-yellow']")
+    @FindBy(xpath = "//button[@class='auth-submit__button ry-button--gradient-yellow']")
     private WebElement signUpButton;
     @FindBy(xpath = "//span[@class='body-l-lg body-l-sm ng-star-inserted']")
     private WebElement acceptAlert;
@@ -54,9 +54,9 @@ public class SignUpPage {
 
     public void signUpEmpty() {
         FluentWait<WebDriver> wait = new FluentWait<>(driver);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='auth-submit__button ry-button--full ry-button--flat-yellow']")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='auth-submit__button ry-button--gradient-yellow']")));
         wait.withTimeout(Duration.ofSeconds(10));
-        driver.findElement(By.xpath("//button[@class='auth-submit__button ry-button--full ry-button--flat-yellow']")).click();
+        driver.findElement(By.xpath("//button[@class='auth-submit__button ry-button--gradient-yellow']")).click();
         List<String> errors = driver.findElements(By.xpath("//span[@class='body-l-lg body-l-sm ng-star-inserted _error']"))
                 .stream().map(WebElement::getText).collect(Collectors.toList());
     }

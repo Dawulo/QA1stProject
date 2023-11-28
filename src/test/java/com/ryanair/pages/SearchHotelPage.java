@@ -16,11 +16,11 @@ public class SearchHotelPage {
     private WebElement cityName;
     @FindBy(xpath = "//div[@class='input-button__input ng-star-inserted']")
     private WebElement checkIn;
-    @FindBy(xpath = "(//div[@class='calendar-body__cell' and @data-id='2023-11-23'])[2]")
+    @FindBy(xpath = "(//div[@class='calendar-body__cell' and @data-id='2023-12-25'])[2]")
     private WebElement checkInDate;
     @FindBy(xpath = "(//div[@class='input-button__input ng-star-inserted'])[2]")
     private WebElement checkOut;
-    @FindBy(xpath = "(//div[@class='calendar-body__cell' and @data-id='2023-11-27'])[2]")
+    @FindBy(xpath = "(//div[@class='calendar-body__cell' and @data-id='2023-12-29'])[2]")
     private WebElement checkOutDate;
     @FindBy(xpath = "//div[@class='input-button__input input-button__display-value--truncate-text ng-star-inserted']")
     private WebElement passengers;
