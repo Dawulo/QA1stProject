@@ -33,9 +33,12 @@ public class SignUpPage {
     private WebElement signUpButton;
     @FindBy(xpath = "//span[@class='body-l-lg body-l-sm ng-star-inserted']")
     private WebElement acceptAlert;
+    @FindBy (css = "[class='kyc-iframe ng-star-inserted']")
+    private WebElement iframe;
 
     public void signUp() {
         signUp.click();
+        driver.switchTo().frame(iframe);
         email.sendKeys(randEmail);
         password.sendKeys(userPassword);
         signUpButton.click();
@@ -43,6 +46,7 @@ public class SignUpPage {
 
     public void signUpWrongEmail() {
         signUp.click();
+        driver.switchTo().frame(iframe);
         email.sendKeys(randWrongEmail);
         password.sendKeys(userPassword);
         signUpButton.click();
@@ -50,6 +54,7 @@ public class SignUpPage {
 
     public void signUpClick() {
         signUp.click();
+        driver.switchTo().frame(iframe);
     }
 
     public void signUpEmpty() {

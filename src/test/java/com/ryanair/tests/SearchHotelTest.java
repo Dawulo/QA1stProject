@@ -27,7 +27,7 @@ public class SearchHotelTest extends BaseTest {
                 .setPassengers(1, 1, "4")
                 .performSearch().getHotels();
         test.log(Status.PASS,"Search hotel test done", SeleniumHelper.getScreenshot(driver));
-        Assert.assertEquals(" EXCLUSIVE Aparthotel Warszawa ", hotels.get(0));
+        Assert.assertEquals(" Warsaw Apartments Magnolie ", hotels.get(0));
         test.log(Status.PASS, "Assertions pass", SeleniumHelper.getScreenshot(driver));
     }
 

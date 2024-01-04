@@ -28,10 +28,10 @@ public class SignUpTest extends BaseTest {
         test.log(Status.PASS,"Sign up test done", SeleniumHelper.getScreenshot(driver));
 
         FluentWait<WebDriver> wait = new FluentWait<>(driver);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'sprawdź swoją pocztę')]")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'Otwórz skrzynkę odbiorczą')]")));
         wait.withTimeout(Duration.ofSeconds(10));
-        WebElement checker = driver.findElement(By.xpath("//span[@class='body-l-lg body-l-sm ng-star-inserted']"));
-        Assert.assertEquals(checker.getText(), "sprawdź swoją pocztę");
+        WebElement checker = driver.findElement(By.xpath("//span[contains(text(), 'Otwórz skrzynkę odbiorczą')]"));
+        Assert.assertEquals(checker.getText(), "Otwórz skrzynkę odbiorczą i wprowadź poniżej 8-cyfrowy kod weryfikacyjny.");
         test.log(Status.PASS,"Sign up asserts test pass", SeleniumHelper.getScreenshot(driver));
     }
 
@@ -42,7 +42,7 @@ public class SignUpTest extends BaseTest {
         signUpPage.signUpWrongEmail();
         test.log(Status.PASS,"Sign up with wrong email test done", SeleniumHelper.getScreenshot(driver));
 
-        WebElement checker = driver.findElement(By.xpath("//span[@class='body-l-lg body-l-sm ng-star-inserted _error']"));
+        WebElement checker = driver.findElement(By.xpath("//span[@class='body-l-lg body-l-sm _error']"));
         Assert.assertEquals(checker.getText(), "Nieprawidłowy format adresu e-mail");
         test.log(Status.PASS,"Sign up with wrong email asserts test pass", SeleniumHelper.getScreenshot(driver));
     }
@@ -58,7 +58,7 @@ public class SignUpTest extends BaseTest {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='auth-submit__button ry-button--gradient-yellow']")));
         wait.withTimeout(Duration.ofSeconds(10));
         driver.findElement(By.xpath("//button[@class='auth-submit__button ry-button--gradient-yellow']")).click();
-        List<String> errors = driver.findElements(By.xpath("//span[@class='body-l-lg body-l-sm ng-star-inserted _error']"))
+        List<String> errors = driver.findElements(By.xpath("//span[@class='body-l-lg body-l-sm _error']"))
                 .stream().map(WebElement::getText).collect(Collectors.toList());
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(errors.contains("Wymagany jest adres e-mail"));

@@ -9,7 +9,8 @@
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SearchHotelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SearchHotelPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/pages/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SearchHotelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SearchHotelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ryanair/tests/SignUpTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,24 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.&lt;default&gt;">
+  <component name="RunManager" selected="TestNG.com.ryanair.tests">
+    <configuration name="SearchHotelTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RyanairTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryanair.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryanair.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SearchHotelTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SearchHotelTest.getInfoTesWithDataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
       <extension name="coverage">
@@ -79,41 +97,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchHotelTest.getInfoTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RyanairTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ryanair.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ryanair.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SearchHotelTest" />
-      <option name="METHOD_NAME" value="getInfoTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RyanairTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ryanair.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ryanair.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SignUpTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SignUpTest.getInfoTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RyanairTest" />
       <extension name="coverage">
@@ -125,6 +108,24 @@
       <option name="PACKAGE_NAME" value="com.ryanair.tests" />
       <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SignUpTest" />
       <option name="METHOD_NAME" value="getInfoTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignUpTest.getInfoWrongEmailTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RyanairTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ryanair.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ryanair.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.ryanair.tests.SignUpTest" />
+      <option name="METHOD_NAME" value="getInfoWrongEmailTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -169,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SignUpTest" />
-        <item itemvalue="TestNG.SignUpTest.getInfoTest" />
         <item itemvalue="TestNG.com.ryanair.tests" />
-        <item itemvalue="TestNG.SearchHotelTest.getInfoTest" />
         <item itemvalue="TestNG.SearchHotelTest.getInfoTesWithDataProvider" />
+        <item itemvalue="TestNG.SearchHotelTest" />
+        <item itemvalue="TestNG.SignUpTest.getInfoTest" />
+        <item itemvalue="TestNG.SignUpTest.getInfoWrongEmailTest" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698147548066</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fix code">
+      <option name="closed" value="true" />
+      <created>1701203775220</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701203775221</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,6 +312,18 @@
     <MESSAGE value="Add ResultsPage, refactor SearchHotelPage" />
     <MESSAGE value="Add DriverFactory, PropertiesLoader, SeleniumHelper, ExcelReader, Apache POI, DataProvider, tests reports with screenshots and code has been cleaned." />
     <MESSAGE value="Clean up code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean up code" />
+    <MESSAGE value="Fix code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix code" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/ryanair/tests/SearchHotelTest.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
